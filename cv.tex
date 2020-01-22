@@ -1,0 +1,100 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\usepackage[scale=0.8]{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=red, urlcolor=red}
+\usepackage{lipsum}
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\firstname{AkshithGunasekaran}
+\familyname{} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+% \title{Curriculum Vitae}
+% \address{Address}{City, State Zip}
+\mobile{+1-541-745-9868}
+\email{akshith.573@gmail.com}
+\homepage{akshithg.github.io}
+% \photo[100pt][0pt]{bitmoji} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+% \quote{"A witty and playful quotation" - John Smith}
+%----------------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+
+\section{Research}
+
+\cventry{current}{Kernel Attack Surface Reduction using Binary Specialization Techniques}{}{}{}{
+    Supported by the Office of Naval Research (ONR) }
+
+\cventry{2019}{Balancing Image Privacy and Usability with Thumbnail-Preserving Encryption}{}{}{}{
+    Accepted at NDSS 2019. \href{https://photoencryption.org}{photoencryption.org}}
+
+\section{Education}
+
+\cventry{(2022)}{PhD Computer Science, Oregon State University}{}{}{}{
+    \textbf{Area of Focus}: Security, Applied Cryptography, AI\\
+    \textbf{Advisors}:
+        \href{https://eecs.oregonstate.edu/people/bobba-rakesh}{Dr. Rakesh Bobba},
+        \href{https://www.unexploitable.systems/}{Dr. Yeongjin Jang}\\
+    \textbf{Coursework}:\\
+        CS Theory (algorithms, graph theory)\\
+        Security (operating systems, system security, cryptography)\\
+        AI (artificial intelligence)
+}
+\cventry{2016}{ B.Tech Computer Science, SRM Uiversity}{}{}{}{
+    \textbf{Projects}:
+        Asia-Pacific Robotics Contest,
+        Knowledge Graphs for Search Engines\\
+    \textbf{GPA}: 8.6/10
+}
+
+\section{Work}
+\cventry{2015 - 2017}{Software Developer, \href{https://www.getsimpl.com/}{Simpl}}{}{}{}{
+    A fintech startup that leverages digital assets and reputation to lend micro credit.\\
+    Built the first MVP and onboarded 5k users to raise a seed capital of 2M\$.\\
+    Built the data engineering pipeline, for Business Intelligence queries.\\
+    \textbf{Tools}: Ruby on Rails, Python, Redis, Spark, Cassandra, Kafka, AWS, git.
+}
+\cventry{2018}{Winter Intern - MIT Media Lab, Human Dynamics Group}{}{}{}{
+    Collaborated with \href{https://web.media.mit.edu/~dang/}{Dr. Dazza Greenwood} on using blockchain as a source of self-sovereign identity.
+}
+
+\section{Other Activities}
+\cventry{}{IEEE Security and Privacy 2020}{}{}{}{
+    Serving as a member of the shadow program committee.
+}
+\cventry{}{External Reviewer}{}{}{}{
+    2019 CCS : ACM Conference on Computer and Communications Security\\
+    2019 RTAS : IEEE Real-Time and Embedded Technology and Applications Symposium\\
+    2019 DSN : IEEE International Conference on Dependable Systems and Network
+}
+\cventry{}{Security Club}{}{}{}{
+    CTF Team - OSUSEC
+}
+
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+% \clearpage
+
+% \recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+% \date{\today} % Letter date
+% \opening{Dear Sir or Madam,} % Opening greeting
+% \closing{Sincerely yours,} % Closing phrase
+% \enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+% \makelettertitle % Print letter title
+
+% \lipsum[1-3] % Dummy text
+
+% \makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
