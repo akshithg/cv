@@ -1,9 +1,11 @@
 \documentclass[11pt,a4paper,sans]{moderncv}
-\usepackage[scale=0.85]{geometry}
-\moderncvstyle{fancy}
-\moderncvcolor{red}
+\usepackage[scale=0.9]{geometry}
 
-\usepackage[scale=0.75]{geometry}
+% casual (default), classic, oldstyle, banking, fancy
+\moderncvstyle{casual}
+
+% black, blue, burgundy, green, grey, orange, purple, red
+\moderncvcolor{green}
 
 % ---------- Title ----------
 \name{Akshith}{Gunasekaran}
@@ -12,7 +14,6 @@
 \phone[mobile]{+1-541-745-9868}
 \email{akshith.573@gmail.com}
 \homepage{akshithg.github.io}
-\social[twitter]{akshith\_g}
 \photo[70pt][0pt]{bitmoji}
 % \quote{"Shrug"}
 % --------------------
@@ -23,62 +24,142 @@
 
 \makecvtitle
 
-% ---------- Education ----------
-\section{Education}
-\cventry{expected 2022}{PhD in CS}{Oregon State University}{Corvallis}{}
+% ---------- Publication ----------
+\section{Publication}
+\cventry{2021}{Fine-grained Analysis of Kernel Non-Deteminism}{}{}{}
 {
-    Area of Focus: System Security, Applied Cryptography, AI\newline{}
-    Advisors:
-    \href{https://eecs.oregonstate.edu/people/bobba-rakesh}{Rakesh Bobba},
-    \href{https://www.unexploitable.systems/}{Yeongjin Jang}\newline{}
-    Coursework: CS Theory (algorithms, graph theory), Security (operating systems, system security, cryptography), AI (artificial intelligence)\newline{}
+    \begin{itemize}
+        \item Clang pass that annotates non-deterministic code paths
+        \item LLVM pass that creates a minimal kernel given an application
+        workload.
+        \item Effective attack surface reduction using a combination of static
+        analysis and dynamic analysis methods.
+    \end{itemize}
 }
-\cventry{2012 - 2016}{BTech in CS}{SRM University}{Chennai}{}
+
+\cventry{2020}{Multi-K: A multiplexing framework for specialized kernels}{}{}{}
 {
-    Activities:
-    ABU Asia-Pacific Robot Contest, Knowledge Based Search Engine\newline{}
-    Venture: \href{https://www.getsimpl.com}{Simpl}, a fintech startup.
+    \begin{itemize}
+        \item Kernel is specialized per application to reduce the attack
+        surface.
+        \item A kernel muliplexing framework with close to bare-metal context
+        switching performance.
+    \end{itemize}
+}
+
+\cventry{NDSS 2019}{Balancing Image Privacy and Usability with Thumbnail-Preserving Encryption}{}{}{}
+{
+    \begin{itemize}
+    \item An image encryption scheme that balances privacy and usability.
+    \item Deployable with no changes to your cloud backend.
+    \item Try it at \href{https://photoencryption.org}{photoencryption.org}
+    \end{itemize}
 }
 % --------------------
 
-% ---------- Publication ----------
-\section{Publication}
-\cventry{2020}{Multi-K: Kernel multiplexing framework}{}{}{}
+% ---------- Education ----------
+\section{Education}
+\cventry{2017 - 2022}{PhD - Computer Science}{Oregon State University}{Corvallis}{}
 {
-    A framework for multiplexing multiple specialized kernels for attack surface reduction.\newline{}
-    Supported by the Office of Naval Research (ONR)\newline{}
+    \begin{itemize}
+    \item Area of Focus: System Security, Applied Cryptography, AI
+    \item Co-Advised by:
+    \href{https://eecs.oregonstate.edu/people/bobba-rakesh}{Rakesh Bobba},
+    \href{https://www.unexploitable.systems/}{Yeongjin Jang}
+    \item Coursework: CS Theory (algorithms, graph theory, distributed systems),
+    Security (operating systems, cryptography), AI (machine
+    learning, reinforcement learning)
+    \end{itemize}
 }
-\cventry{2019}{Balancing Image Privacy and Usability with Thumbnail-Preserving Encryption}{}{}{}
+\cventry{2012 - 2016}{BTech in Computer Science}{SRM University}{Chennai}{}
 {
-    Accepted at \textbf{NDSS 2019}. \href{https://photoencryption.org}{photoencryption.org}
+    \begin{itemize}
+    \item Activities: ABU Asia-Pacific Robot Contest, Knowledge Based Search
+    Engine
+    \item Venture: \href{https://www.getsimpl.com}{Simpl}, a fin-tech startup.
+    \end{itemize}
 }
 % --------------------
 
 % ---------- Work ----------
 \section{Work}
-\cventry{2017}{Intern - MIT Media Lab, Human Dynamics Group}{}{}{}
+\cventry{2020}{Founding Developer, Elloloop}{}{}{}
 {
-    Mentor: \href{https://web.media.mit.edu/~dang/}{Dazza Greenwood}\newline{}
-    Prototyped applictions for self-sovereign identity with blockchain as a trust anchor.\newline{}
-    Tools: Node, Ethereum, web3.js, TravisCI
+    \begin{itemize}
+        \item School schedule managing tool, Discussion Groups
+        \item Pre-seed stage. Tools: Angular, GraphQL
+    \end{itemize}
 }
-\cventry{2015 - 2017}{Software Developer, \href{https://www.getsimpl.com/}{Simpl}}{}{}{}
+
+\cventry{Winter 2017}{Winter Intern - MIT Media Lab, Human Dynamics Group}{}{}{}
 {
-    Built the first MVP and onboarded 5k users to raise a seed capital of 2M\$.\newline{}
-    Scaled the service using an event based pub-sub microservice architecture.\newline{}
-    Built the data engineering pipeline, for Business Intelligence queries.\newline{}
-    Tools: Ruby on Rails, Python, Redis, Kafka, RabbitMQ, Spark, Cassandra.
+    \begin{itemize}
+    \item Mentored by: \href{https://web.media.mit.edu/~dang/}{Dazza Greenwood}
+    \item Prototyped an authentication framework based on OAuth that directly
+    translates to permissions into enforceable contracts.
+    \item Prototyped a decentralized autonomous organization to manage community
+        loans.
+    \item Tools: Node, Ethereum, web3.js, TravisCI
+    \end{itemize}
+}
+
+\cventry{2014 - 2017}{Software Developer/Founding Team, \href{https://www.getsimpl.com/}{Simpl}}{}{}{}
+{
+    \begin{itemize}
+    \item A pay later service
+    \item Built the MVP and on-boarded 10k users to raise the seed capital.
+    \item Scaled the service using an event-based/pub-sub micro-service
+    architecture. (1 of 4 devs)
+    \item Built the data engineering pipeline, for Business Intelligence queries
+    (1 of 2 devs)
+    \item Tools: Golang, Ruby on Rails, Python, Redis, Kafka, RabbitMQ, Spark,
+    Cassandra, Datadog.
+    \end{itemize}
 }
 % --------------------
 
 % ---------- Activities ----------
 \section{Activities}
-\cventry{}{CTF Team}{OSUSEC}{}{}{}
+\cventry{Current}{CTF Team}{\href{https://www.osusec.org/}{OSUSEC}}{}{}{
+    \begin{itemize}
+    \item Skills: Pwn, Reverse Engineering, Forensics
+    \end{itemize}
+}
+\cventry{Summer 2019}{Instructor}{Pacific North West Cyber Camp}{}{}{
+    \begin{itemize}
+    \item A week long hands-on educational camp for high school students.
+    \item Topic include basic computer/network security hardening, cyber ethics
+    \item Delivered the course material and instructed the lab sessions.
+    \end{itemize}
+}
+\cventry{Summer 2018}{Volunteer}{Pacific North West Cyber Camp}{}{}{}
+\cventry{2020}{Poster Jury}{IEEE Security and Privacy}{}{}{}
 \cventry{2020}{Shadow Program Committee}{IEEE Security and Privacy}{}{}{}
 \cventry{2019}{External Reviewer}{ACM Conference on Computer and Communications Security}{}{}{}
 \cventry{2019}{External Reviewer}{IEEE Real-Time and Embedded Technology and Applications Symposium}{}{}{}
 \cventry{2019}{External Reviewer}{IEEE International Conference on Dependable Systems and Network}{}{}{}
 \cventry{2018}{Teaching Assistant}{CS290 Web Technologies and Web Security}{}{}{}
+\cventry{Since 2017}{Research Mentor}{\href{https://nextech.io/}{Next Tech Lab}}{}{}{
+    \begin{itemize}
+    \item A Multi-diciplinary undergrad research lab.
+    \item International QS Award For Re-imagining Education
+    \item I advice undergrads on Privacy and Security topics.
+    \end{itemize}
+}
+% \cventry{2017}{Top Innovator}{Citi Mobile Challenge}{}{}{
+%     \begin{itemize}
+%     \item Top 10 out of 1000s of submissions in the Asia-Pacific Region
+%     \item Developed Cetas. A mobile app that significantly reduces the cost of
+%     Knowing-Your-Customer and improves privacy of end-users.
+%     \end{itemize}
+% }
+% \cventry{2015}{Special Prize Winner}{ Policy Hack - Indian Institute of Management}{}{}{
+%     \begin{itemize}
+%     \item Used large data sets made public by the Govt of India, to show the ineffectiveness of the ”Special Status States” Policy of the Govt of India.
+%     \item The ​only student team​ among finalists.
+%     \end{itemize}
+% }
+
 % --------------------
 
 %----------------------------------------------------------------------------------------
