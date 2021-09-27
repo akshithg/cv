@@ -7,7 +7,7 @@
 % black, blue, burgundy, green, grey, orange, purple, red
 \moderncvcolor{green}
 
-% ---------- Title ----------
+% --- Title --------------------------------------------------------------------
 \name{Akshith}{Gunasekaran}
 % \title{Curriculum Vitae}
 % \address{Address}{City, State Zip}
@@ -16,23 +16,24 @@
 \homepage{akshithg.xyz}
 \photo[70pt][0pt]{bitmoji}
 % \quote{"Shrug"}
-% --------------------
+% --- end Title ----------------------------------------------------------------
 
-% ---------- Content ----------
+% ---------- Content -----------------------------------------------------------
 
 \begin{document}
 
 \makecvtitle
 
-% ---------- Publication ----------
+% --- Publication --------------------------------------------------------------
 \section{Publication}
 \cventry{2021}{Fine-grained Analysis of Kernel Non-Determinism}{}{}{}
 {
     \begin{itemize}
-        \item LLVM pass that finds non-deterministic code paths in the Linux
-        kernel and improves effectiveness of run time profilers.
-        \item Effective attack surface reduction.
+        \item LLVM pass to find non-deterministic code paths in the Linux
+        kernel
+        \item Improves coverage of run time profilers.
         \item Effective bug finding.
+        \item Effective attack surface reduction.
     \end{itemize}
 }
 
@@ -54,9 +55,9 @@
     \item Try it at \href{https://photoencryption.org}{photoencryption.org}
     \end{itemize}
 }
-% --------------------
+% --- end Publication ----------------------------------------------------------
 
-% ---------- Education ----------
+% --- Education ----------------------------------------------------------------
 \section{Education}
 \cventry{2017 - 2022}{PhD - Computer Science}{Oregon State University}{Corvallis}{}
 {
@@ -80,9 +81,9 @@
     \item Venture: \href{https://www.getsimpl.com}{Simpl}, a fin-tech startup.
     \end{itemize}
 }
-% --------------------
+% --- end Education ------------------------------------------------------------
 
-% ---------- Work ----------
+% --- Work ---------------------------------------------------------------------
 \section{Work}
 
 \cventry{Summer 2021}{Research Intern - Program Analysis and Software Synthesis, PARC, a Xerox Company}{}{}{}
@@ -90,7 +91,7 @@
     \begin{itemize}
     \item Locating and Isolating software features in binary application
     \item Automated test generation
-    \item Designing search based techniques for software synthesis
+    \item Designed search based techniques for software synthesis
     \item Methods for evaluating equivalency of software applications
     \end{itemize}
 }
@@ -110,7 +111,7 @@
 \cventry{2014 - 2017}{Software Developer/Founding Team, \href{https://www.getsimpl.com/}{Simpl}}{}{}{}
 {
     \begin{itemize}
-    \item A pay later service
+    \item A buy now, pay later service
     \item Used by 5 Mil+ users
     \item Scaled the service using an event-based/pub-sub micro-service
     architecture (1 of 4 devs)
@@ -120,9 +121,9 @@
     Cassandra, Datadog
     \end{itemize}
 }
-% --------------------
+% --- end Work -----------------------------------------------------------------
 
-% ---------- Activities ----------
+% --- Activities ---------------------------------------------------------------
 \section{Activities}
 \cventry{Current}{CTF Team}{\href{https://www.osusec.org/}{OSUSEC}}{}{}{
     \begin{itemize}
@@ -164,12 +165,10 @@
 %     \end{itemize}
 % }
 
-% --------------------
+% --- end Activities -----------------------------------------------------------
+% --- end Content --------------------------------------------------------------
 
-%----------------------------------------------------------------------------------------
-%	COVER LETTER
-%----------------------------------------------------------------------------------------
-
+% --- Cover Letter -------------------------------------------------------------
 % To remove the cover letter, comment out this entire block
 
 % \clearpage
@@ -186,6 +185,6 @@
 
 % \makeletterclosing % Print letter signature
 
-%----------------------------------------------------------------------------------------
+% --- end Cover Letter ---------------------------------------------------------
 
 \end{document}
