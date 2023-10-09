@@ -1,29 +1,30 @@
 \documentclass[11pt,a4paper,sans]{moderncv}
 \usepackage[scale=0.9]{geometry}
 
-% casual (default), classic, oldstyle, banking, fancy
-\moderncvstyle{fancy}
+% casual (default), classic, oldstyle, banking, fancy \moderncvstyle{fancy}
+\moderncvstyle{classic}
 
 % black, blue, burgundy, green, grey, orange, purple, red
 \moderncvcolor{black}
 
 % --- Title --------------------------------------------------------------------
 \name{Akshith}{Gunasekaran}
-% \title{Curriculum Vitae} \address{Address}{City, State Zip}
+% \title{Curriculum Vitae}
+\address{}{Corvallis, OR 97330}
 \phone[mobile]{+1(541)745-9868}
 \email{akshith.573@gmail.com}
 \homepage{akshithg.xyz}
-\photo[70pt][0pt]{bitmoji}
-% \quote{"Shrug"} --- end Title
+% \photo[70pt][0pt]{bitmoji} \quote{"Shrug"} --- end Title
 % ----------------------------------------------------------------
 
 % ---------- Content -----------------------------------------------------------
 
 \begin{document}
 \makecvtitle
-
+\input{sections/summary}
 \input{sections/work}
 \input{sections/publications}
+\clearpage
 \input{sections/education}
 \input{sections/activities}
 
