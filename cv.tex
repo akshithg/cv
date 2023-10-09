@@ -2,201 +2,39 @@
 \usepackage[scale=0.9]{geometry}
 
 % casual (default), classic, oldstyle, banking, fancy
-\moderncvstyle{casual}
+\moderncvstyle{fancy}
 
 % black, blue, burgundy, green, grey, orange, purple, red
-\moderncvcolor{green}
+\moderncvcolor{black}
 
 % --- Title --------------------------------------------------------------------
 \name{Akshith}{Gunasekaran}
-% \title{Curriculum Vitae}
-% \address{Address}{City, State Zip}
-\phone[mobile]{+1-541-745-9868}
+% \title{Curriculum Vitae} \address{Address}{City, State Zip}
+\phone[mobile]{+1(541)745-9868}
 \email{akshith.573@gmail.com}
 \homepage{akshithg.xyz}
 \photo[70pt][0pt]{bitmoji}
-% \quote{"Shrug"}
-% --- end Title ----------------------------------------------------------------
+% \quote{"Shrug"} --- end Title
+% ----------------------------------------------------------------
 
 % ---------- Content -----------------------------------------------------------
 
 \begin{document}
-
 \makecvtitle
 
-% --- Publication --------------------------------------------------------------
-\section{Publication}
-\cventry{2021}{Recovery of Symbolic Mathematics and Software Re-Synthesis of Control Binaries}{}{}{}
-{
-    \begin{itemize}
-        \item Decompilation of Control Binaries
-        \item Isolation of Symbolic Mathematical Expressions
-        \item AST translation of Symbolic Expressions
-        \item Software Re-Synthesis and Verification
-    \end{itemize}
-}
-
-\cventry{2020}{MultiK: A Framework for Orchestrating Multiple Specialized Kernels}{}{}{}
-{
-    \begin{itemize}
-        \item Kernel specialized per application to reduce the attack surface.
-        \item A kernel multiplexing framework with close to bare-metal context
-        switching performance.
-    \end{itemize}
-}
-
-\cventry{NDSS 2019}{Balancing Image Privacy and Usability with Thumbnail-Preserving Encryption}{}{}{}
-{
-    \begin{itemize}
-    \item An image encryption scheme that balances privacy and usability.
-    \item Deployable with no changes to your cloud storage backend.
-    \item Try it at \href{https://photoencryption.org}{photoencryption.org}
-    \end{itemize}
-}
-% --- end Publication ----------------------------------------------------------
-\section{Projects / Research In Progress}
-
-\cventry{2022}{Adversarial Attacks on Code Completion Models}{}{}{}
-{
-    \begin{itemize}
-        \item Targeted and Non-Targeted Attacks on Code Completion Models
-        \item Attacks on GPT-2 based code completion model
-        \item Attacks on LSTM based code completion model
-        \item Data poisoning and model poisoning attacks
-    \end{itemize}
-}
-
-\cventry{2021}{Fine-grained Analysis of Kernel Non-Determinism}{}{}{}
-{
-    \begin{itemize}
-        \item Static and Dynamic analysis of non-deterministic code paths in the
-        Linux kernel
-        \item Improved code coverage for profilers.
-        \item Effective bug finding and attack surface reduction.
-    \end{itemize}
-}
-
-% --- Education ----------------------------------------------------------------
-\section{Education}
-\cventry{2017 - 2022}{PhD - Computer Science}{Oregon State University}{Corvallis}{}
-{
-    \begin{itemize}
-    \item Area of Focus: System Security, Applied Cryptography, AI
-    \item Co-Advised by:
-    \href{https://eecs.oregonstate.edu/people/bobba-rakesh}{Rakesh Bobba},
-    \href{https://www.unexploitable.systems/}{Yeongjin Jang}
-    \item Research: Linux Kernel Security, Static Analysis, Dynamic Analysis,
-    Data flow analysis, Adversarial attacks on machine learning.
-    \item Research Tools: LLVM, Qemu, GDB, Python, C/C++, TensorFlow, Adversarial Attacks
-    \item Coursework: CS Theory (algorithms, graph theory, distributed systems),
-    Security (operating systems, cryptography), AI (machine learning,
-    reinforcement learning, machine learning security)
-    \end{itemize}
-}
-\cventry{2012 - 2016}{BTech - Computer Science}{SRM University}{Chennai}{}
-{
-    \begin{itemize}
-    \item Activities: ABU Asia-Pacific Robot Contest, Semantic Search Engine.
-    \item Venture: \href{https://www.getsimpl.com}{Simpl}, a fin-tech startup.
-    \end{itemize}
-}
-% --- end Education ------------------------------------------------------------
-
-% --- Work ---------------------------------------------------------------------
-\section{Work}
-
-\cventry{Summer 2021}{Research Intern - Intelligent Systems Lab, PARC, a Xerox Company}{}{}{}
-{
-    \begin{itemize}
-    \item Locating and Isolating software features in binary application
-    \item Automated test generation
-    \item Designing search based techniques for software synthesis
-    \item Methods for evaluating equivalency of software applications
-    \item Evaluation of neural decompilation methods
-    \end{itemize}
-}
-
-\cventry{Winter 2017}{Winter Intern - MIT Media Lab, Human Dynamics Group}{}{}{}
-{
-    \begin{itemize}
-    \item Mentored by: \href{https://web.media.mit.edu/~dang/}{Dazza Greenwood}
-    \item Investigate and design applications that use decentralized identities
-    \item Prototyped a decentralized autonomous organization
-    \item Tools: Node, Solidity, web3.js, Ethereum, TravisCI
-    \end{itemize}
-}
-
-\cventry{2014 - 2017}{Software Developer/Founding Team, \href{https://www.getsimpl.com/}{Simpl}}{}{}{}
-{
-    \begin{itemize}
-    \item A buy now, pay later service
-    \item Used by 5 Mil $+$ users
-    \item Scaled the service using an event-based/pub-sub microservice
-    architecture (1 of 4 devs)
-    \item Built the data engineering pipeline, for Business Intelligence queries
-    (1 of 2 devs)
-    \item Tools: Golang, Ruby on Rails, Python, Redis, Kafka, RabbitMQ, Spark,
-    Cassandra, Datadog
-    \end{itemize}
-}
-% --- end Work -----------------------------------------------------------------
-
-% --- Activities ---------------------------------------------------------------
-\section{Activities}
-\cventry{Current}{CTF Team}{\href{https://www.osusec.org/}{OSUSEC}}{}{}{
-    \begin{itemize}
-    \item Skills: Pwn, Reverse Engineering, Program Analysis, Forensics
-    \end{itemize}
-}
-\cventry{Summer 2019}{Instructor}{Pacific North West Cyber Camp}{}{}{
-    \begin{itemize}
-    \item A week long hands-on educational camp for high school students
-    \item Topics include basic computer/network security hardening, cyber ethics
-    \item Delivered the course material and instructed the lab sessions
-    \end{itemize}
-}
-\cventry{Winter 2021}{Teaching Assistant}{CS427 Cryptography}{}{}{}
-\cventry{Fall 2021}{Teaching Assistant}{CS370 Introduction to Security}{}{}{}
-\cventry{2020}{Poster Jury}{IEEE Security and Privacy}{}{}{}
-\cventry{2020}{Shadow Program Committee}{IEEE Security and Privacy}{}{}{}
-\cventry{2019}{External Reviewer}{ACM Conference on Computer and Communications Security}{}{}{}
-\cventry{2019}{External Reviewer}{IEEE Real-Time and Embedded Technology and Applications Symposium}{}{}{}
-\cventry{2019}{External Reviewer}{IEEE International Conference on Dependable Systems and Network}{}{}{}
-\cventry{Summer 2018}{Volunteer}{Pacific North West Cyber Camp}{}{}{}
-\cventry{Fall 2017}{Teaching Assistant}{CS290 Web Technologies and Web Security}{}{}{}
-\cventry{Since 2015}{Research Mentor}{\href{https://nextech.io/}{Next Tech Lab}}{}{}{
-    \begin{itemize}
-        \item A Multidisciplinary undergrad research lab
-        \item International QS Award For Re-imagining Education
-        \item I advise undergrads on Security and Privacy topics
-    \end{itemize}
-}
-% \cventry{2017}{Top Innovator}{Citi Mobile Challenge}{}{}{
-%     \begin{itemize}
-%     \item Top 10 out of 1000s of submissions in the Asia-Pacific Region
-%     \item Developed Cetas. A mobile app that significantly reduces the cost of
-%     Knowing-Your-Customer and improves privacy of end-users.
-%     \end{itemize}
-% }
-% \cventry{2015}{Special Prize Winner}{ Policy Hack - Indian Institute of Management}{}{}{
-%     \begin{itemize}
-%     \item Used large data sets made public by the Govt of India, to show the ineffectiveness of the ”Special Status States” Policy of the Govt of India.
-%     \item The ​only student team​ among finalists.
-%     \end{itemize}
-% }
-
-% --- end Activities -----------------------------------------------------------
-% --- end Content --------------------------------------------------------------
+\input{sections/work}
+\input{sections/publications}
+\input{sections/education}
+\input{sections/activities}
 
 % --- Cover Letter -------------------------------------------------------------
 % To remove the cover letter, comment out this entire block
 
 % \clearpage
 
-% \recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
-% \date{\today} % Letter date
-% \opening{Dear Sir or Madam,} % Opening greeting
-% \closing{Sincerely yours,} % Closing phrase
+% \recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} %
+% Letter recipient \date{\today} % Letter date \opening{Dear Sir or Madam,} %
+% Opening greeting \closing{Sincerely yours,} % Closing phrase
 % \enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
 
 % \makelettertitle % Print letter title
